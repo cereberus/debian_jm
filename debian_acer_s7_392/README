@@ -1,0 +1,24 @@
+# # #
+README.Aspire_S7_392_setup
+# #
+
+For all the *.deb packages in this folder:
+sudo dpkg -i *.deb
+# # 
+
+iwlwifi driver
+#
+
+for kernel 3.14.9+:
+    
+cd iwlwifi-7260-ucode-25.228.9.0/
+cp * /lib/firmware
+sudo shutdown -r 0
+#
+
+for kernel 3.17+:
+
+cd iwlwifi-7260-ucode-23.11.10.0/
+cp * /lib/firmware
+sudo shutdown -r 0
+# # #
