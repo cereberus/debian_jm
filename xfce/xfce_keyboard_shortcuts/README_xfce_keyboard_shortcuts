@@ -1,0 +1,5 @@
+# # #
+
+The configured keyboard shortcuts are stored in : ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+And the system default (at least on OpenSuse 12.1) : /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+# # #
