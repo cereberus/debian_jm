@@ -131,6 +131,7 @@ set ruler
 
 " Commenting blocks of code.
     autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+    autocmd FileType scilab           let b:comment_leader = '// '
     autocmd FileType sh,ruby,python   let b:comment_leader = '# '
     autocmd FileType conf,fstab       let b:comment_leader = '# '
     autocmd FileType tex              let b:comment_leader = '% '
@@ -138,3 +139,11 @@ set ruler
     autocmd FileType vim              let b:comment_leader = '" '
     noremap <silent> cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
     noremap <silent> cv :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
+
+
+set foldmethod=indent
+set foldnestmax=2
+nnoremap <space> za
+vnoremap <space> zf
+vnoremap <C-c> "+y
